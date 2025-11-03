@@ -47,7 +47,7 @@ public class LottoPrinter {
     }
 
     public void revenueGuide(int prize, int purchase) {
-        double revenue = prize/purchase*100;
-        System.out.printf("총 수익률은 %.3f%% 입니다.", revenue);
+        double revenue = (double) prize/purchase * 100.0;
+        System.out.printf("총 수익률은 %.1f%%입니다.", revenue);
     }
 }
